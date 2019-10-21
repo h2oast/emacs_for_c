@@ -1,2 +1,2 @@
-# emacs_for_c
+# emacs for c
 doer's emacs profile for c develop environment
