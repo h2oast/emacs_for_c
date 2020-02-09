@@ -28,3 +28,5 @@
 (require 'init_site-lisp)
 (require 'init_ecb)
 (require 'init_cscope)
+(require 'init_company)
+
