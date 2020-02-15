@@ -24,9 +24,24 @@
 ;; add extension load path 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
+
 (require 'init_elpa)
 (require 'init_site-lisp)
 (require 'init_ecb)
 (require 'init_cscope)
 (require 'init_company)
+;; emacs builtin settings
+(require 'init_emacs)
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ecb-options-version "2.50"))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
