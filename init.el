@@ -24,16 +24,21 @@
 ;; add extension load path 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
-
-(require 'init_elpa)
-(require 'init_site-lisp)
-
 ;; packages need to be installed manually first after you installed emacs
-(require 'init_zenburn-theme)
-(require 'init_ecb)
-(require 'init_cscope)
-(require 'init_company)
+;; setup package except elpa, since others depend on elpa
+(defun develop_initialize()
+    "develop environment initialization for c/c++"
+    (require 'init_zenburn-theme)
+    (require 'init_ecb)
+    (require 'init_cscope)
+    (require 'init_company))
 
 ;; emacs builtin settings
 (require 'init_emacs)
+(require 'init_elpa)
+(require 'init_site-lisp)
+
+;; after you install all the packages need, then can this initialize can act as expected
+(develop_initialize)
+
 
